@@ -1,0 +1,110 @@
+.first, .second, .third, .fourth {
+  width: 300px;
+  height: 300px;
+  background-size: cover;
+  position: absolute;
+  text-align: center;
+  margin: 1% 0% 0 10%;
+  border-radius: 12px;
+  display: inline-block;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+/* Images for portfolio */
+.first{
+  background-image: url("https://recipes.timesofindia.com/photo/53205522.cms?imgsize=302803");
+}
+.second{
+  background-image: url("https://recipes.timesofindia.com/photo/55432577.cms?imgsize=286204");
+}
+.third{
+  background-image: url("https://recipes.timesofindia.com/photo/59985193.cms?imgsize=431774");
+}
+.fourth {
+  background-image: url("https://recipes.timesofindia.com/photo/63328859.cms?imgsize=137693");
+}
+
+p {
+  font-family: 'Josefin Sans', sans-serif;
+  color: rgba(255,255,255,1);
+  background: black;
+  background: linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+  background: -webkit-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+  background: -moz-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+  padding: 10px;
+  line-height: 28px;
+  text-align: justify;
+  position: absolute;
+  bottom: 0;
+  margin: 0;
+  height: 30px;
+  transition: height .5s;
+  -webkit-transition: height .5s;
+  -moz-transition: height .5s;
+}
+
+small {
+  opacity: 0;
+}
+
+.show-description p {
+  height: 150px;
+}
+
+.show-description small {
+  opacity: 1;
+}
+.price {
+  float: right;
+}
+/* positioning of portfolio images */
+.first, .third {
+  left: 8%;
+}
+.second, .fourth {
+  left: 48%;
+}
+.third, .fourth {
+  top: 60%;
+}
+
+/* Responsive Web Design Portion to position portfolio images */
+@media screen and (min-width: 1600px){
+  /* positioning of portfolio images */
+  .first, .second, .third, .fourth {
+    top: 20%;
+  }
+  .first {
+    left: 3%;
+  }
+  .second {
+    left: 23%;
+  }
+  .third {
+    left: 43%;
+  }
+  .fourth {
+    left: 63%;
+  }
+}
+
+/* Responsive Web Design Portion */
+@media screen and (max-width: 800px){
+  /* positioning of portfolio images */
+  .first, .second, .third, .fourth {
+    left: 18%;
+  }
+  .first {
+    top: 20%;
+  }
+  .second {
+    top: 55%;
+  }
+  .third {
+    top: 90%;
+  }
+  .fourth {
+    top: 125%;
+  }
+}

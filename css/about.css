@@ -1,0 +1,25 @@
+input {
+  border: 0;
+  padding: 10px;
+  font-size: 18px;
+  text-align: center;
+}
+
+input[type="submit"]{
+  color: white;
+  background: red;
+}
+input {
+  margin: 10px auto;
+  display: inline-block;
+}
+form {
+  text-align: center;
+}
+@media screen and (max-width: 800px){
+  input {
+    margin: 10px auto;
+    display: block;
+  }
+
+}

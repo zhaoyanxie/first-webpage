@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/portfolio.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+
+    <title>Portfolio</title>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.js"
+      integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+      crossorigin="anonymous">
+    </script>
+  </head>
+  <body>
+    <ul id="nav_bar">
+        <li><a href="index.html" class="fa fa-home" title="Home"></a></li>
+        <li><a href="about.html" class="fa fa-user" title="About"></a></li>
+        <li><a href="portfolio.html" class="fa fa-folder-open" title="Portfolio"></a></li>
+    </ul>
+
+    <div class="container">
+      <header>
+        <h1>Portfolio</h1>
+      </header>
+
+      <h2>A Glance at Past Projects</h2>
+
+      <div class="first">
+        <p>Project<span class="price">1</span><br />
+        <small>This is a place holder for the description of Project 1 </small></p>
+      </div>
+
+      <div class="second">
+        <p>Project <span class="price">2</span><br />
+        <small>This is a place holder for the description of Project 2</small></p>
+      </div>
+
+      <div class="third">
+        <p>Project<span class="price">3</span><br />
+        <small>This is a place holder for the description of Project 3</small></p>
+      </div>
+
+      <div class="fourth">
+        <p>Project<span class="price">4</span><br />
+        <small>This is a place holder for the description of Project 4</small></p>
+      </div>
+      <div class="footer">
+        <strong>Link with me: </strong>
+        <!-- Add font awesome icons -->
+        <a href="#" class="fa fa-facebook"></a>
+        <a href="#" class="fa fa-twitter"></a>
+        <a href="#" class="fa fa-google"></a>
+        <a href="#" class="fa fa-linkedin"></a>
+      </div>
+
+  </div>
+
+    <script>
+      $('.first').hover(function() {$(this).toggleClass('show-description');});
+      $('.second').hover(function() {$(this).toggleClass('show-description');});
+      $('.third').hover(function() {$(this).toggleClass('show-description');});
+      $('.fourth').hover(function() {$(this).toggleClass('show-description');});
+    </script>
+
+  </body>
+</html>
